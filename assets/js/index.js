@@ -42,3 +42,14 @@ const activeEl = function (){
     }
 }
 window.addEventListener("scroll",activeEl)
+
+/*
+* button hero的hover弹出样式
+* */
+const buttons = document.querySelectorAll("[data-btn]");
+
+const buttonHoverRipple = function (event){
+    this.style.setProperty("--top",`${event.offsetY}px`)
+    this.style.setProperty("--left",`${event.offsetX}px`)
+}
+addEventOnElement(buttons,"mousemove",buttonHoverRipple)
