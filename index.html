@@ -21,51 +21,149 @@
     <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
 </head>
 <body>
-    <header class="header active" data-header>
-        <div class="container">
-            <a href="#" class="logo">
-                <img src="./assets/images/logo.svg" width="110" height="53" alt="unigine home">
-            </a>
+<header class="header active" data-header>
+    <div class="container">
+        <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="110" height="53" alt="unigine home">
+        </a>
 
-            <nav class="navbar" data-navbar>
-                <ul class="navbar-list">
-                    <li class="navbar-item">
-                        <a href="#" class="navbar-link" data-nav-link>home</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#news" class="navbar-link" data-nav-link>news</a>
-                    </li>
-                    <li class="navbar-item">
-                        <a href="#contact" class="navbar-link" data-nav-link>contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <a href="#" class="btn" data-btn>join our team</a>
-            <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
-                <span class="line line-1"></span>
-                <span class="line line-2"></span>
-                <span class="line line-3"></span>
-            </button>
-        </div>
-    </header>
-    <main>
-        <article>
-            <div class="hero has-before" id="home">
-                <div class="container">
-                    <p class="section-subtitle">Enjoy The Games</p>
-                    <h1 class="h1 title hero-title">Epic Games Made For True Gamers!</h1>
-                    <a href="#" class="btn" data-btn>Join With Us</a>
-                    <div class="hero-banner">
-                        <img src="./assets/images/hero-banner.png" width="850" height="414" alt="herobanner" class="w-100">
-                        <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
-                    </div>
+        <nav class="navbar" data-navbar>
+            <ul class="navbar-list">
+                <li class="navbar-item">
+                    <a href="#" class="navbar-link" data-nav-link>home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#tournament" class="navbar-link" data-nav-link>tournament</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#news" class="navbar-link" data-nav-link>news</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="#contact" class="navbar-link" data-nav-link>contact</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#" class="btn" data-btn>join our team</a>
+        <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <span class="line line-1"></span>
+            <span class="line line-2"></span>
+            <span class="line line-3"></span>
+        </button>
+    </div>
+</header>
+<main>
+    <article>
+        <!--hero-->
+        <div class="hero has-before" id="home">
+            <div class="container">
+                <p class="section-subtitle">Enjoy The Games</p>
+                <h1 class="h1 title hero-title">Epic Games Made For True Gamers!</h1>
+                <a href="#" class="btn" data-btn>Join With Us</a>
+                <div class="hero-banner">
+                    <img src="./assets/images/hero-banner.png" width="850" height="414" alt="herobanner" class="w-100">
+                    <img src="./assets/images/hero-banner-bg.png" alt="" class="hero-banner-bg">
                 </div>
             </div>
-        </article>
-    </main>
+        </div>
+        <!--upcoming-->
+        <section class="section upcoming" aria-labelledby="upcoming-lable" id="tournament">
+            <div class="container">
+                <p class="section-subtitle" id="upcoming-lable" data-reveal="bottom">Upcoming Matches</p>
+                <h2 class="h2 section-title" data-reveal="bottom">
+                    Battles Extreme Masters <span class="span">Tournament</span>
+                </h2>
+                <p class="section-text" data-reveal="bottom">Our success in creating business solutions is due in large
+                    part to our talented and highly committed team.</p>
+                <ol class="upcoming-list">
+                    <li class="upcoming-item">
+                        <div class="upcoming-card left has-before" data-reveal="left">
+                            <img class="card-banner" src="./assets/images/team-logo-1.png" width="86" height="81"
+                                 loading="lazy"
+                                 alt="Purple Death Cadets">
+                            <h3 class="h3 card-title">Purple Death Cadets</h3>
+                            <div class="card-meta">Group 04 | Match 06th</div>
+                        </div>
+                        <div class="upcoming-time" data-reveal="bottom">
+                            <time class="time" datetime="10:00">10:00</time>
+                            <time class="time" datetime="2022-05-25">25TH May 2024</time>
+                            <div class="social-wrapper">
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitch"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="upcoming-card right has-before" data-reveal="right">
+                            <img class="card-banner" src="./assets/images/team-logo-2.png" width="86" height="81"
+                                 loading="lazy"
+                                 alt="Trigger Brain Squad">
+                            <h3 class="h3 card-title">Trigger Brain Squad</h3>
+                            <div class="card-meta">Group 04 | Match 06th</div>
+                        </div>
+                    </li>
+                    <li class="upcoming-item">
+                        <div class="upcoming-card left has-before" data-reveal="left">
+                            <img class="card-banner" src="./assets/images/team-logo-3.png" width="86" height="81"
+                                 loading="lazy"
+                                 alt="The Black Hat Hackers">
+                            <h3 class="h3 card-title">The Black Hat Hackers</h3>
+                            <div class="card-meta">Group 05 | Match 02nd</div>
+                        </div>
+                        <div class="upcoming-time" data-reveal="bottom">
+                            <time class="time" datetime="12:30">12:30</time>
+                            <time class="time" datetime="2024-01-10">10TH Jan 2024</time>
+                            <div class="social-wrapper">
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitch"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="upcoming-card right has-before" data-reveal="right">
+                            <img class="card-banner" src="./assets/images/team-logo-4.png" width="86" height="81"
+                                 loading="lazy"
+                                 alt="Your Worst Nightmare">
+                            <h3 class="h3 card-title">Your Worst Nightmare</h3>
+                            <div class="card-meta">Group 04 | Match 06th</div>
+                        </div>
+                    </li>
+                    <li class="upcoming-item">
+                        <div class="upcoming-card left has-before" data-reveal="left">
+                            <img class="card-banner" src="./assets/images/team-logo-5.png" width="86" height="81"
+                                 loading="lazy"
+                                 alt="Witches And Quizards">
+                            <h3 class="h3 card-title">Witches And Quizards</h3>
+                            <div class="card-meta">Group 02 | Match 03rd</div>
+                        </div>
+                        <div class="upcoming-time" data-reveal="bottom">
+                            <time class="time" datetime="04:20">04:20</time>
+                            <time class="time" datetime="2024-12-15">15th Dec 2024</time>
+                            <div class="social-wrapper">
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitch"></ion-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="upcoming-card right has-before" data-reveal="right">
+                            <img class="card-banner" src="./assets/images/team-logo-4.png" width="86" height="81"
+                                 loading="lazy"
+                                 alt="Resting Bitch Faces">
+                            <h3 class="h3 card-title">Resting Bitch Faces</h3>
+                            <div class="card-meta">Group 05 | Match 02nd</div>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+    </article>
+</main>
 </body>
 <script src="./assets/js/index.js"></script>
 <!--
