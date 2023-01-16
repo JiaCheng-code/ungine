@@ -815,3 +815,89 @@ nedia queries适配
         opacity: 0.75;
     }
 }
+@media (min-width: 992px) {
+    /*
+    custom
+    */
+    :root {
+        /*
+        font size
+        */
+        --fontSize-2: 4.5rem;
+        /*
+        spacing
+        */
+        --section-spacing: 100px;
+    }
+
+    /*
+    reused style
+    */
+    .container {
+        max-width: 960px;
+    }
+    .h2 {
+        line-height: 1.1;
+    }
+    /*
+    header
+    */
+    .nav-toggle-btn {
+        display: none;
+    }
+    .navbar,
+    .navbar.active {
+        all: unset;
+        display: block;
+    }
+    .navbar-item,
+    .navbar-item:last-child {
+        border: 0;
+    }
+
+    .navbar-list {
+        display: flex;
+    }
+    .header .btn {
+        display: grid;
+        text-align: center;
+    }
+
+    /*
+    hero
+    */
+    .hero-banner-bg {
+        transform: scale(1.2);
+    }
+    /*
+    upcooming
+    */
+    .upcoming-item {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 1fr;
+        align-items: center;
+    }
+    .upcoming-time {
+        margin-block: 0;
+    }
+    .upcoming-card .card-meta {
+        left: 50%;
+        bottom: -30px;
+        transform: translateX(-50%);
+    }
+    .upcoming-card.right .card-meta {
+        left: 50%;
+    }
+    /*
+    news
+    */
+    .news-list {
+        grid-template-columns: repeat(3,1fr);
+    }
+    /*
+    footer
+    */
+    .footer-top .container {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
