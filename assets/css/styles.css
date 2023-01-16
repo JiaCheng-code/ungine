@@ -682,3 +682,136 @@ custom cursor
 .cursor {
     display: none;
 }
+/*
+nedia queries适配
+*/
+@media (min-width: 575px) {
+    /*
+    reused style
+    */
+    .container {
+        max-width: 540px;
+        width: 100%;
+        margin-inline: auto;
+    }
+    /*
+    header
+    */
+    .header .logo img {
+        width: 160px;
+    }
+    /*
+    upcoming
+    */
+    .upcoming-card.left .card-meta {
+        left: auto;
+        right: -15%;
+    }
+    .upcoming-card.right .card-meta {
+        left: 25%;
+    }
+    /*
+    footer
+    */
+    .footer-top .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (min-width: 768px) {
+    /*
+    custom
+    */
+    :root {
+        /*
+        font size
+        */
+        --fontSize-1: 6.5rem;
+        --fontSize-2: 3.2rem;
+    }
+    /*
+    reused style
+    */
+    .container {
+        max-width: 720px;
+    }
+    .h1 {
+        line-height: 1;
+    }
+    /*
+    hero
+    */
+    .hero .section-subtitle {
+        letter-spacing: 10px;
+    }
+    .hero-banner-bg {
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: scale(1.3);
+        transform-origin: bottom;
+        z-index: -1;
+
+    }
+    /*
+    upcoming
+    */
+    .upcoming-card::before {
+        height: 110px;
+    }
+    .upcoming-card .card-meta {
+        padding-block: 12px;
+        bottom: 20px;
+    }
+    .upcoming-card .card-title {
+        --fontSize-3: 2.8rem;
+    }
+    .upcoming-card.left .card-meta {
+        right: -10%;
+    }
+    .upcoming-card.right .card-meta {
+        left: 20%;
+    }
+    .upcoming-time .time {
+        --fontSize-1: 5rem;
+    }
+    /*
+    news
+    */
+    .news-list {
+        grid-template-columns: 1fr 1fr;
+    }
+    /*
+    footer
+    */
+    .footer-top .container {
+        grid-template-columns: 1fr 1fr;
+    }
+    /*
+    reused style
+    */
+    .cursor {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 30px;
+        height: 30px;
+        background-color: var(--bg-purple);
+        border-radius: var(--radius-circle);
+        transform: translate(-50%,-50%);
+        opacity: 0;
+        pointer-events: none;
+        z-index: 6;
+        transition: var(--transition-1);
+        transition-property: opacity,transform;
+    }
+    body:hover .cursor {
+        opacity: 0.5;
+    }
+    body .cursor.hovered {
+        transform: translate(-50%,-50%) scale(1.3);
+        opacity: 0.75;
+    }
+}

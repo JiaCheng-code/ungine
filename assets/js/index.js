@@ -70,5 +70,6 @@ const revealElementOnScroll = function () {
         }
     }
 }
-window.addEventListener("scroll",revealElementOnScroll)
-window.addEventListener("load",revealElementOnScroll)
+window.addEventListener("scroll", revealElementOnScroll)
+window.addEventListener("load", revealElementOnScroll)
+
